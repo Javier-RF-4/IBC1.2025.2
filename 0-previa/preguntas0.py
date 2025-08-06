@@ -35,8 +35,8 @@ respuestas = {}
 
 # %%
 respuestas[(1,0,"Moneda")] = [
-0, # 0. Cara
-0, # 1. Sello
+0.5, # 0. Cara
+0.5, # 1. Sello
 ""
 ]
 
@@ -52,9 +52,9 @@ respuestas[(1,0,"Moneda")] = [
 
 # %%
 respuestas[(1,1,"Cajas")] = [
-0, # 0. Caja 0
-0, # 1. Caja 1
-0, # 2. Caja 2
+0.33, # 0. Caja 0
+0.33, # 1. Caja 1
+0.33, # 2. Caja 2
 0, # 3. Otro lugar
 ""
 ]
@@ -74,7 +74,7 @@ respuestas[(1,1,"Cajas")] = [
 respuestas[(1,2,"Mentir")] = [
 0, # 0. Maxima incertidumbre (entropía)
 0, # 1. Minima incertidumbre (entropía)
-0, # 2. Maxima incertidumbre (entropía) dada la información disponible (restricciones)
+1, # 2. Maxima incertidumbre (entropía) dada la información disponible (restricciones)
 0, # 3. Minima incertidumbre (entropía) dada la información disponible (restricciones)
 0, # 4. Ninguna de las anteriores
 "",
@@ -99,15 +99,15 @@ respuestas[(1,2,"Mentir")] = [
 # %%
 respuestas[(1,3,"Universos")] = [
 0, # 0. Regalo = 1, Abren = 1
-0, # 1. Regalo = 1, Abren = 2
-0, # 2. Regalo = 1, Abren = 3
+0.16, # 1. Regalo = 1, Abren = 2
+0.16, # 2. Regalo = 1, Abren = 3
 0, # 3. Regalo = 2, Abren = 1
 0, # 4. Regalo = 2, Abren = 2
-0, # 5. Regalo = 2, Abren = 3
+0.33, # 5. Regalo = 2, Abren = 3
 0, # 6. Regalo = 3, Abren = 1
-0, # 7. Regalo = 3, Abren = 2
+0.33, # 7. Regalo = 3, Abren = 2
 0, # 8. Regalo = 3, Abren = 3
-"Justifique brevemente",
+"Las opciones que abre la 1, no tienen probabilidad porque es la que reservamos. Las que abre en la que esta el regalo, tampoco porque en el enunciado dice que elige la que no contiene el regalo. Para empezar tenemos que la probabilidad de cada caja es de 1/3. Los casos #5 y #7, sería 1/3. Si esta en la caja 1, entonces ese 1/3 se divide en 2 (o se multiplica por 1/2) y queda 1/6.",
 ]
 
 # %% [markdown]
@@ -128,8 +128,8 @@ respuestas[(1,3,"Universos")] = [
 # %%
 respuestas[(1,4,"Razonamiento")] = [
 0, # 0. Antes del siglo 17
-0, # 1. Siglo 17
-0, # 2. Siglo 18
+0.8, # 1. Siglo 17
+0.2, # 2. Siglo 18
 0, # 3. Siglo 19
 0, # 4. Siglo 20
 0, # 5. Siglo 21
@@ -152,9 +152,9 @@ respuestas[(1,5,"Independencia")] = [
 0, # 0. 0.9
 0, # 1. 0.1
 0, # 2. 0.0
-0, # 3. 0.2
+1, # 3. 0.2
 0, # 4. Ninguna de las anteriores
-"Justificar brevemente",
+"Es por la definicion de la probabilidad de dos eventos independientes. Es la multiplicacion de cada evento. P(A) X P(B) = 0.4 * 0.5 = 0.2",
 ]
 
 # %% [markdown]
@@ -196,13 +196,13 @@ respuestas[(1,6,"Marginal")] = [
 0, # 9. P(Y=1): 0.55
 0, # 10. P(Y=1): 0.60
 0, # 11. P(Y=1): 0.65
-0, # 12. P(Y=1): 0.70
+1, # 12. P(Y=1): 0.70
 0, # 13. P(Y=1): 0.75
 0, # 14. P(Y=1): 0.80
 0, # 15. P(Y=1): 0.85
 0, # 16. P(Y=1): 0.90
 0, # 17. Ninguna de las anteriores
-"Justifique brevemente.",
+"La P(Y=1) es igual a la suma de 0.3 + 0.4 = 0.7. Que son las dos probabilidad que Y=1. Tiene sentido porque las probabilidades de Y=0, es 0.1 + 0.2 = 0.3.",
 ]
 
 
@@ -234,7 +234,7 @@ respuestas[(1,6,"Marginal")] = [
 respuestas[(1,7,"Condicional")] = [
 0, # 0. P(Y=1|X=1): 1/2
 0, # 1. P(Y=1|X=1): 1/3
-0, # 2. P(Y=1|X=1): 2/3
+1, # 2. P(Y=1|X=1): 2/3
 0, # 3. P(Y=1|X=1): 1/4
 0, # 4. P(Y=1|X=1): 2/4
 0, # 5. P(Y=1|X=1): 3/4
@@ -248,7 +248,7 @@ respuestas[(1,7,"Condicional")] = [
 0, # 13. P(Y=1|X=1): 4/6
 0, # 14. P(Y=1|X=1): 5/6
 0, # 15. Ninguna de las anteriores
-"Justifique brevemente.",
+"Primero calculamos la marginal de X=1. P(X=1) = P(X=1 , Y=0) + P(X=1 , Y=1) = 0.2 + 0.4 = 0.6. Luego, hacemos el calculo con la condicional de que X=1. P(Y=1|X=1) = P(X=1 , Y=1) / P(X=1) = 0.4 / 0.6 = 2/3 ",
 ]
 
 
