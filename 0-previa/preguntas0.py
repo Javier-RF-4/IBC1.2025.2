@@ -263,7 +263,7 @@ respuestas[(1,7,"Condicional")] = [
 
 # %%
 respuestas[(1,8,"Overfitting")] = [
-0, # 0. No
+1, # 0. No
 0, # 1. Si
 "",
 ]
@@ -278,9 +278,9 @@ respuestas[(1,8,"Overfitting")] = [
 
 # %%
 respuestas[(1,9,"Evaluación")] = [
-0, # 0. No
+1, # 0. No
 0, # 1. Si
-"Justifique brevemente",
+"Es depende del problema. En algunos casos, como en la medicina, se prestaria mas atencion a como da Recall. En otra areas, me puede interesar la precision para no equivocarme.",
 ]
 
 # %% [markdown]
@@ -297,11 +297,11 @@ respuestas[(1,9,"Evaluación")] = [
 # %%
 respuestas[(1,10,"Predicción")] = [
 0, # 0. El modelo causal correcto nunca puede ser mejor prediciendo que los complejos algoritmos de AI/ML.
-0, # 1. El modelo causal correcto a veces puede ser mejor, y a veces peor, que los complejos algoritmos de AI/ML.
+1, # 1. El modelo causal correcto a veces puede ser mejor, y a veces peor, que los complejos algoritmos de AI/ML.
 0, # 2. El modelo causal correcto nunca puede ser peor prediciendo que los complejos algoritmos de AI/ML.
 0, # 3. Los modelos causales solo explican, no predicen.
 0, # 4. Ninguna de las anteriores
-"Justifique brevemente",
+"Depende del problema y de lo que estoy buscando, si predecir o explicar. El modelo causal podria ser mejor en los casos de conocimientos previos y la AI/ML cuando no sabemos la causalidad.",
 ]
 
 # %% [markdown]
