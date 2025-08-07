@@ -326,15 +326,15 @@ respuestas[(1,11,"Diversificación")] = [
 0, # 0. Recursos asignados a Cara: 0.0
 0, # 1. Recursos asignados a Cara: 0.1
 0, # 2. Recursos asignados a Cara: 0.2
-0, # 3. Recursos asignados a Cara: 0.3
-0, # 4. Recursos asignados a Cara: 0.4
+0.25, # 3. Recursos asignados a Cara: 0.3
+0.75, # 4. Recursos asignados a Cara: 0.4
 0, # 5. Recursos asignados a Cara: 0.5
 0, # 6. Recursos asignados a Cara: 0.6
 0, # 7. Recursos asignados a Cara: 0.7
 0, # 8. Recursos asignados a Cara: 0.8
 0, # 9. Recursos asignados a Cara: 0.9
 0, # 10. Recursos asignados a Cara: 1.0
-"Justifique brevemente.",
+"Intentaria de hacer una apuesta equilibrada pero tirando un poco más a sello. Así no pierdo tanto cuando toque sello. Cuando toque cara, voy a recuperar lo perdido rapidamente.",
 ]
 
 # %% [markdown]
@@ -384,8 +384,8 @@ respuestas[(1,13,"Fondo común")] = [
 respuestas[(1,14,"Tragedia de los comunes")] = [
 0, # 0. Nos conviene aportar al fondo común
 0, # 1. Es indistinto
-0, # 1. Nos conviene dejar de aportar mientras seguimos recibiendo la cuota del fondo común
-"Justifique brevemente.",
+1, # 1. Nos conviene dejar de aportar mientras seguimos recibiendo la cuota del fondo común
+"Me conviene asegurar mi plata, no tomo riesgo y recibir las ganancias que genera el fondo comun.",
 ]
 
 
